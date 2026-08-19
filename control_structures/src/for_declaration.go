@@ -49,4 +49,22 @@ func main() {
 	}
 	fmt.Println("We broke the loop!")
 }
+
+We can use the continue statement when we want to skip the current iteration 
+and move on to the next one:
+
+package main
+
+import "fmt"
+
+func main() {
+	for i := 0; i < 20; i++ {
+		if i%2 != 0 {
+			// Skip odd numbers and go to the next iteration
+			continue
+		}
+		fmt.Println(i)
+	}
+}
+
 */
